@@ -1,5 +1,3 @@
-using System;
-
 namespace nutracker.Models.User
 {
     public class UserInfo

@@ -1,8 +1,5 @@
 ﻿using nutracker.Models.Food;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace nutracker.Entities.FoodEntities
 {

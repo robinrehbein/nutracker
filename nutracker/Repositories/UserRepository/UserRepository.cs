@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace nutracker.Repositories.UserRepository
+﻿namespace nutracker.Repositories.UserRepository
 {
     public class UserRepository
     {
