@@ -1,4 +1,5 @@
-﻿using System;
+﻿using nutracker.Models.User;
+using System;
 
 namespace nutracker.Entities.UserEntities
 {

@@ -24,8 +24,10 @@ namespace nutracker.Controllers.UserController
         [HttpPost]
         public User Post(User addUser)
         {
-            User user = new User();
-            user = addUser;
+            //User user = new User();
+            //user = addUser;
+            User user = addUser;
+
             // persist user
             return user;
         }
