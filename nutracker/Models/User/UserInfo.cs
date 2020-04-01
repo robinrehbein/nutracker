@@ -7,12 +7,12 @@ namespace nutracker.Models.User
             male, female, diverse
         }
 
-        public WeightInfo weightInfo { get; set; }
+        public WeightInfo WeightInfo { get; set; }
 
-        public double height { get; set; }
+        public double Height { get; set; }
 
-        public double calorieGoal { get; set; }
+        public double CalorieGoal { get; set; }
 
-        public double calorieToday { get; set; }
+        public double CalorieToday { get; set; }
     }
 }

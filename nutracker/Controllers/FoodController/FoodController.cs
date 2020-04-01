@@ -18,6 +18,7 @@ namespace nutracker.Controllers.FoodController
         [HttpGet]
         public string Get()
         {
+
             return "food";
         }
 

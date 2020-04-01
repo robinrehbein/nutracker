@@ -4,16 +4,18 @@ namespace nutracker.Models.User
 {
     public class User
     {
-        public string firstname { get; set; }
+        public long Id { get; set; }
 
-        public string lastname { get; set; }
+        public string Firstname { get; set; }
 
-        public string username { get; set; }
+        public string Lastname { get; set; }
 
-        public string email { get; set; }
+        public string Username { get; set; }
 
-        public DateTime birthday { get; set; }
+        public string Email { get; set; }
 
-        public UserInfo userInfo { get; set; }
+        public DateTime Birthday { get; set; }
+
+        public UserInfo UserInfo { get; set; }
     }
 }

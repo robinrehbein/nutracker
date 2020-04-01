@@ -4,16 +4,18 @@ namespace nutracker.Models.Food
 {
     public class Food
     {
-        public Boolean validated { get; set; }
+        public long Id { get; set; }
 
-        public string name { get; set; }
+        public Boolean Validated { get; set; }
 
-        public FoodCategory foodCategory { get; set; }
+        public string Name { get; set; }
 
-        public FoodInfo foodInfo { get; set; }
+        public FoodCategory FoodCategory { get; set; }
 
-        public string barcode { get; set; }
+        public FoodInfo FoodInfo { get; set; }
 
-        public double portion { get; set; }
+        public string Barcode { get; set; }
+
+        public double Portion { get; set; }
     }
 }

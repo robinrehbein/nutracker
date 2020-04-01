@@ -4,8 +4,8 @@ namespace nutracker.Models.User
 {
     public class WeightInfo
     {
-        public double weight { get; set; }
+        public double Weight { get; set; }
 
-        public DateTime date { get; set; }
+        public DateTime Date { get; set; }
     }
 }

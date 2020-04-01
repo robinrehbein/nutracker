@@ -1,9 +1,12 @@
-﻿namespace nutracker.Models.Food
-{
-    public class FoodInfo
-    {
-        public long Id { get; set; }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
+namespace nutracker.Dto.FoodDto
+{
+    public class FoodInfoDto
+    {
         public double FoodCalories { get; set; }
 
         // TODO: davon Zucker

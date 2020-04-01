@@ -2,12 +2,13 @@
 {
     public class FoodCategory
     {
-        enum drink
+        public long Id { get; set; }
+        enum Drink
         {
             nonalcoholic, alcoholic
         }
 
-        enum food
+        enum Food
         {
             vegetable, animal, fungal
         }
