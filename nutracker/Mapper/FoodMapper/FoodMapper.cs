@@ -12,7 +12,7 @@ namespace nutracker.Mapper.FoodMapper
         public FoodDto ToDto(Food food)
         {
             FoodDto foodDto = new FoodDto();
-            FoodCategroyMapper foodCategroyMapper = new FoodCategroyMapper();
+            FoodCategoryMapper foodCategroyMapper = new FoodCategoryMapper();
             FoodInfoMapper foodInfoMapper = new FoodInfoMapper();
             foodDto.validated = food.Validated;
             foodDto.name = food.Name;
@@ -24,17 +24,17 @@ namespace nutracker.Mapper.FoodMapper
         }
     }
 
-    //public Food ToEntity(FoodDto foodDto)
-    //{
-    //    Food food = new Food();
-    //    FoodCategroyMapper foodCategroyMapper = new FoodCategroyMapper();
-    //    FoodInfoMapper foodInfoMapper = new FoodInfoMapper();
-    //    food.Validated = foodDto.validated;
-    //    food.Name = foodDto.name;
-    //    food.FoodCategory = foodCategroyMapper.ToEntity(foodDto.foodCategoryDto);
-    //    food.FoodInfo = foodInfoMapper.ToEntity(foodDto.foodInfoDto);
-    //    food.Barcode = foodDto.barcode;
-    //    food.Portion = foodDto.portion;
-    //    return food;
-    //}
+    public Food ToEntity(FoodDto foodDto)
+    {
+        Food food = new Food();
+        FoodCategoryMapper foodCategoryMapper = new FoodCategoryMapper();
+        FoodInfoMapper foodInfoMapper = new FoodInfoMapper();
+        food.Validated = foodDto.validated;
+        food.Name = foodDto.name;
+        food.FoodCategory = foodCategoryMapper.ToEntity(foodDto.foodCategoryDto);
+        food.FoodInfo = foodInfoMapper.ToEntity(foodDto.foodInfoDto);
+        food.Barcode = foodDto.barcode;
+        food.Portion = foodDto.portion;
+        return food;
+    }
 }

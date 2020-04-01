@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace nutracker.Mapper.FoodMapper
 {
-    public class FoodCategroyMapper
+    public class FoodCategoryMapper
     {
         public FoodCategoryDto ToDto(FoodCategory foodCategory)
         {
